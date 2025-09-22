@@ -4,9 +4,9 @@ Host is up (0.0095s latency).
 Not shown: 999 closed tcp ports (reset)
 PORT   STATE SERVICE
 53/tcp open  domain
-MAC Address: xx.xx.xx.xx.xx.xx (Unknown)
+MAC Address: xx.xx.xx.xx.xx.xx (Hidden)
 
-Nmap scan report for 10.70.62.14
+Nmap scan report for 10.x.x.x
 Host is up (0.00073s latency).
 Not shown: 997 closed tcp ports (reset)
 PORT    STATE SERVICE
@@ -31,5 +31,6 @@ Security Risk: It is known to have vulnerabilities and can be a target for attac
 Port 445 (SMB)
 Function: Port 445 is used by the Server Message Block (SMB) protocol, the modern standard for file and printer sharing on Windows networks.
 Security Risk: This port is a major target for attackers. Vulnerabilities in the SMB protocol have been exploited by some of the most famous malware, including the WannaCry and NotPetya ransomware outbreaks, allowing for rapid and widespread infection.
+
 
 
