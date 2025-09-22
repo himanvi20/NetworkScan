@@ -1,0 +1,34 @@
+# Nmap 7.98 scan initiated Mon Sep 22 12:25:44 2025 as: nmap -sS -oN scan_results.txt 10.70.62.0/24
+Nmap scan report for 10.70.62.114
+Host is up (0.0095s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE
+53/tcp open  domain
+MAC Address: 1E:92:8F:6F:13:7C (Unknown)
+
+Nmap scan report for 10.70.62.14
+Host is up (0.00073s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT    STATE SERVICE
+135/tcp open  msrpc
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+# Nmap done at Mon Sep 22 12:25:53 2025 -- 256 IP addresses (2 hosts up) scanned in 9.23 seconds
+
+Port 53 (DNS)
+Function: Port 53 is used by the Domain Name System (DNS) to translate human-friendly domain names (like google.com) into IP addresses. It is essential for web browsing and network communication.
+Security Risk: It can be a target for attacks like DNS spoofing (redirecting you to a fake website) and DNS tunneling (hiding malicious data inside DNS queries).
+
+Port 135 (MSRPC)
+Function: This port is used by Microsoft Remote Procedure Call (RPC). It's a core Windows service that allows a program on one computer to request a service from a program on another computer. It helps different Windows services communicate across a network.
+Security Risk: Because it's a gateway to various Windows services, it can be exploited by malware and worms to gain unauthorized access and move laterally across a network.
+
+Port 139 (NetBIOS-SSN)
+Function: Port 139 is a legacy port used for NetBIOS over TCP/IP. Its main role is to provide file and printer sharing on older Windows networks.
+Security Risk: It is known to have vulnerabilities and can be a target for attackers trying to gain unauthorized access to shared files and resources. It's a less common but still relevant security risk on older systems.
+
+Port 445 (SMB)
+Function: Port 445 is used by the Server Message Block (SMB) protocol, the modern standard for file and printer sharing on Windows networks.
+Security Risk: This port is a major target for attackers. Vulnerabilities in the SMB protocol have been exploited by some of the most famous malware, including the WannaCry and NotPetya ransomware outbreaks, allowing for rapid and widespread infection.
+
