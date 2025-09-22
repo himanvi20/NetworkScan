@@ -9,4 +9,4 @@ This repository contains the results of a network security task to scan a local 
 * *Text Editor:* Used to save and document the final results.
 
 ##  How the Scan Was Performed
-The scan was executed on a local network using the following command to perform a TCP SYN scan on the IP range 10.70.62.0/24:
+The scan was executed on a local network using the following command to perform a TCP SYN scan on the IP range
